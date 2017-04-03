@@ -50,7 +50,7 @@ func avgofElements(list:[Int]) -> Int {
         total += value
     }
     return total / list.count
-
+}
 
 
 
