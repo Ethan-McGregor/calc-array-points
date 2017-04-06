@@ -88,7 +88,7 @@ func add(p1: Dictionary <String, Int>?, p2: Dictionary <String, Int>?) -> Dictio
 }
 
 func add(p1: Dictionary <String, Double>?, p2: Dictionary <String, Double>?) -> Dictionary <String, Double>? {
-    if(p1 == nil || p2 == nil || (p1?.count)! <= 2||(p2?.count)! <= 2 ){
+    if(p1 == nil || p2 == nil || (p1?.count)! < 2||(p2?.count)! < 2 ){
         return nil
     }
 
@@ -99,7 +99,7 @@ func add(p1: Dictionary <String, Double>?, p2: Dictionary <String, Double>?) -> 
 }
 
 func subtract(p1: Dictionary <String, Int>?, p2: Dictionary <String, Int>?) -> Dictionary <String, Int>? {
-    if(p1 == nil || p2 == nil || (p1?.count)! <= 2||(p2?.count)! <= 2 ){
+    if(p1 == nil || p2 == nil || (p1?.count)! < 2||(p2?.count)! < 2 ){
 
         return nil
     }
@@ -112,7 +112,7 @@ func subtract(p1: Dictionary <String, Int>?, p2: Dictionary <String, Int>?) -> D
 }
 
 func subtract(p1: Dictionary <String, Double>?, p2: Dictionary <String, Double>?) -> Dictionary <String, Double>? {
-    if(p1 == nil || p2 == nil || (p1?.count)! <= 2||(p2?.count)! <= 2 ){
+    if(p1 == nil || p2 == nil || (p1?.count)! < 2||(p2?.count)! < 2 ){
 
         return nil
     }
