@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		492AB7231E9303350031C8CE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492AB7221E9303350031C8CE /* main.swift */; };
+		492AB7361E95AC580031C8CE /* CalcArrayPointsUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492AB7351E95AC580031C8CE /* CalcArrayPointsUnitTests.swift */; };
+		492AB7371E95AD710031C8CE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492AB7221E9303350031C8CE /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +27,20 @@
 /* Begin PBXFileReference section */
 		492AB71F1E9303350031C8CE /* CalcArrayPoints */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CalcArrayPoints; sourceTree = BUILT_PRODUCTS_DIR; };
 		492AB7221E9303350031C8CE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		492AB72D1E95ABBB0031C8CE /* PointTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PointTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		492AB7311E95ABBB0031C8CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		492AB7351E95AC580031C8CE /* CalcArrayPointsUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalcArrayPointsUnitTests.swift; path = ../../../../Downloads/CalcArrayPointsUnitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		492AB71C1E9303350031C8CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492AB72A1E95ABBB0031C8CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				492AB7211E9303350031C8CE /* CalcArrayPoints */,
+				492AB72E1E95ABBB0031C8CE /* PointTest */,
 				492AB7201E9303350031C8CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				492AB71F1E9303350031C8CE /* CalcArrayPoints */,
+				492AB72D1E95ABBB0031C8CE /* PointTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +74,15 @@
 				492AB7221E9303350031C8CE /* main.swift */,
 			);
 			path = CalcArrayPoints;
+			sourceTree = "<group>";
+		};
+		492AB72E1E95ABBB0031C8CE /* PointTest */ = {
+			isa = PBXGroup;
+			children = (
+				492AB7351E95AC580031C8CE /* CalcArrayPointsUnitTests.swift */,
+				492AB7311E95ABBB0031C8CE /* Info.plist */,
+			);
+			path = PointTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +105,23 @@
 			productReference = 492AB71F1E9303350031C8CE /* CalcArrayPoints */;
 			productType = "com.apple.product-type.tool";
 		};
+		492AB72C1E95ABBB0031C8CE /* PointTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 492AB7341E95ABBB0031C8CE /* Build configuration list for PBXNativeTarget "PointTest" */;
+			buildPhases = (
+				492AB7291E95ABBB0031C8CE /* Sources */,
+				492AB72A1E95ABBB0031C8CE /* Frameworks */,
+				492AB72B1E95ABBB0031C8CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PointTest;
+			productName = PointTest;
+			productReference = 492AB72D1E95ABBB0031C8CE /* PointTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +133,11 @@
 				ORGANIZATIONNAME = Ethan.McGregor;
 				TargetAttributes = {
 					492AB71E1E9303350031C8CE = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = N3W8E9H2DC;
+						ProvisioningStyle = Automatic;
+					};
+					492AB72C1E95ABBB0031C8CE = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = N3W8E9H2DC;
 						ProvisioningStyle = Automatic;
@@ -112,9 +157,20 @@
 			projectRoot = "";
 			targets = (
 				492AB71E1E9303350031C8CE /* CalcArrayPoints */,
+				492AB72C1E95ABBB0031C8CE /* PointTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		492AB72B1E95ABBB0031C8CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		492AB71B1E9303350031C8CE /* Sources */ = {
@@ -122,6 +178,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				492AB7231E9303350031C8CE /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492AB7291E95ABBB0031C8CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492AB7371E95AD710031C8CE /* main.swift in Sources */,
+				492AB7361E95AC580031C8CE /* CalcArrayPointsUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +301,34 @@
 			};
 			name = Release;
 		};
+		492AB7321E95ABBB0031C8CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = N3W8E9H2DC;
+				INFOPLIST_FILE = PointTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uw.info.449.PointTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		492AB7331E95ABBB0031C8CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = N3W8E9H2DC;
+				INFOPLIST_FILE = PointTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uw.info.449.PointTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -253,6 +346,15 @@
 			buildConfigurations = (
 				492AB7271E9303350031C8CE /* Debug */,
 				492AB7281E9303350031C8CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		492AB7341E95ABBB0031C8CE /* Build configuration list for PBXNativeTarget "PointTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				492AB7321E95ABBB0031C8CE /* Debug */,
+				492AB7331E95ABBB0031C8CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

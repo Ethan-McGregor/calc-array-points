@@ -8,49 +8,118 @@
 
 import Foundation
 
-func add(one:Int,two:Int) -> Int {
-    return one + two
+//Basic functions
+
+func add(left:Int,right:Int) -> Int {
+    return left + right
 }
 
-func sub(one:Int,two:Int) -> Int{
-        return one - two
+func subtract(left:Int,right:Int) -> Int{
+        return left - right
 }
 
-func mult(one:Int,two:Int) -> Int {
-    return one * two
+func multiply(left:Int,right:Int) -> Int {
+    return left * right
 }
 
-func div(one:Int,two:Int) -> Int {
-    return one / two
+func divide(left:Int,right:Int) -> Int {
+    return left / right
 }
 
-func addElements(list:[Int]) -> Int{
+
+func mathOperation(left : Int, right: Int, operation : (Int, Int) -> Int) -> Int {
+    return operation(left, right)
+}
+
+
+//Arrays
+func add(array:[Int]) -> Int{
     var total = 0
-    for value in list {
+    for value in array {
         total += value
     }
     return total
 }
 
-func multElements(list:[Int]) -> Int{
+func multiply(array:[Int]) -> Int{
     var total = 1
-    for value in list {
+    for value in array {
         total *= value
     }
     return total
 }
 
-func countElements(list:[Int]) -> Int {
-    return list.count
+func count(array:[Int]) -> Int {
+    return array.count
 }
 
-func avgofElements(list:[Int]) -> Int {
+func average(array:[Int]) -> Int {
     var total = 0
-    for value in list {
+    for value in array {
         total += value
     }
-    return total / list.count
+    return total / array.count
+}
+
+func reduce(array: [Int], operation: ([Int]) -> Int) -> Int {
+    return operation(array)
 }
 
 
+//Points
+
+func add(p1:(x:Int,y:Int), p2:(x:Int,y:Int)) -> (Int, Int) {
+    return (p1.x+p2.x,p1.y+p2.y)
+}
+
+func subtract(p1:(x:Int,y:Int), p2:(x:Int,y:Int)) -> (Int, Int) {
+    return (p1.x-p2.x,p1.y-p2.y)
+}
+
+func add(p1: Dictionary <String, Int>?, p2: Dictionary <String, Int>?) -> Dictionary <String, Int>? {
+    if(p1 == nil || p2 == nil){
+        return nil
+    }
+        return [
+            "x" : p1!["x"]! + p2!["x"]!,
+            "y" : p1!["y"]! + p2!["y"]!,
+        ]
+  
+}
+
+func add(p1: Dictionary <String, Double>?, p2: Dictionary <String, Double>?) -> Dictionary <String, Double>? {
+    if(p1 == nil || p2 == nil || (p1?.count)! <= 2||(p2?.count)! <= 2 ){
+        return nil
+    }
+
+    return [
+        "x" : p1!["x"]! + p2!["x"]!,
+        "y" : p1!["y"]! + p2!["y"]!,
+    ]
+}
+
+func subtract(p1: Dictionary <String, Int>?, p2: Dictionary <String, Int>?) -> Dictionary <String, Int>? {
+    if(p1 == nil || p2 == nil || (p1?.count)! <= 2||(p2?.count)! <= 2 ){
+
+        return nil
+    }
+    
+        return [
+            "x" : p1!["x"]! - p2!["x"]!,
+            "y" : p1!["y"]! - p2!["y"]!,
+        ]
+    
+}
+
+func subtract(p1: Dictionary <String, Double>?, p2: Dictionary <String, Double>?) -> Dictionary <String, Double>? {
+    if(p1 == nil || p2 == nil || (p1?.count)! <= 2||(p2?.count)! <= 2 ){
+
+        return nil
+    }
+        return [
+            "x" : p1!["x"]! - p2!["x"]!,
+            "y" : p1!["y"]! - p2!["y"]!,
+        ]
+    
+}
 
